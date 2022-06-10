@@ -1,0 +1,60 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  padding-left: 35px;
+  padding-right: 60px;
+  &__list {
+    display: flex;
+  }
+  &__list-item + .menu__list-item {
+    padding-left: 80px;
+  }
+  &__link {
+    @extend %title-font;
+    color: #363838E6;
+    line-height: 22px;
+    cursor: pointer;
+  }
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+
+.footer {
+  &__content {
+    background-color: #DFDFDF;
+    min-height: 342px;
+    padding: 60px 0 80px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__copyright {
+    background-color: $title;
+    text-align: center;
+    color: #A1A1A1;
+    min-height: 110px;
+    padding: 42px 0 41px;
+  }
+}
